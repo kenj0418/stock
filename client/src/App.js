@@ -8,8 +8,11 @@ import AddHolding from "./components/AddHolding";
 
 //apollo client setup
 const client = new ApolloClient({
-  uri: "http://localhost:4000/graphql"
+  uri: "http://localhost:7071/graphql"
 });
+// const client = new ApolloClient({
+//   uri: "http://localhost:4000/graphql"
+// });
 
 function App() {
   return (
