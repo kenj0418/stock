@@ -13,6 +13,8 @@ class AddSecurity extends Component {
     };
   }
 
+  //todo change to lookup up name from yahoo-finance via another function
+
   submitForm(e) {
     e.preventDefault();
     this.props.addSecurityMutation({

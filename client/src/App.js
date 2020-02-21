@@ -8,8 +8,11 @@ import AddHolding from "./components/AddHolding";
 
 //apollo client setup
 const client = new ApolloClient({
-  uri: "http://localhost:7071/graphql"
+  uri: "https://kenj0418-stock-server.azurewebsites.net/api/stocks"
 });
+// const client = new ApolloClient({
+//   uri: "http://localhost:7071/graphql"
+// });
 // const client = new ApolloClient({
 //   uri: "http://localhost:4000/graphql"
 // });

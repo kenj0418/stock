@@ -20,7 +20,7 @@ class AddHolding extends Component {
     var data = this.props.getSecuritiesQuery;
     if (data.loading) {
       return <option disabled>Loading authors</option>;
-    } else {
+    } else if (data.securities) {
       return data.securities.map(security => {
         return (
           <option key={security.id} value={security.id}>
@@ -28,6 +28,8 @@ class AddHolding extends Component {
           </option>
         );
       });
+    } else {
+      return <option>No securities found</option>;
     }
   }
 

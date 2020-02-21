@@ -13,7 +13,8 @@ class Portfolio extends Component {
 
   displayHoldings(data) {
     if (data && data.error) {
-      return <li>Error: {data.error}</li>;
+      console.log(data.error);
+      return <li>Error</li>;
     } else if (!data || data.loading || !data.holdings) {
       return <li>Loading...</li>;
     }

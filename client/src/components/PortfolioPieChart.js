@@ -15,7 +15,8 @@ const colors = [
 class PortfolioPieChart extends Component {
   displayHoldings(data) {
     if (data && data.error) {
-      return <li>Error: {data.error}</li>;
+      console.log(data.error);
+      return <li>Error</li>;
     } else if (!data || data.loading || !data.holdings) {
       return <li>Loading...</li>;
     }
@@ -38,9 +39,9 @@ class PortfolioPieChart extends Component {
           fontFamily: "sans-serif",
           fill: "#121212"
         }}
-        labelPosition="105"
-        radius="30"
-        cy="30"
+        labelPosition={105}
+        radius={30}
+        cy={30}
       />
     );
   }
